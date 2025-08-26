@@ -8,9 +8,9 @@ export default function AuthProvider({children}) {
     const [isAuthenticated , setAuthenticated] = useState(false);
     useEffect(()=>{
         if(!isAuthenticated){
-            navigate("/Home")
-        }else{
             navigate("/")
+        }else{
+            navigate("/Home")
         }
     }, [])
     

@@ -1,16 +1,20 @@
 import { Box, Heading, Text } from '@chakra-ui/react'
 import React from 'react'
 import ProgressBar from './ProgressBar'
+import GoalCard from './GoalCard'
+import Background from '../../assets/background.png'
+import LeftSidebar from './LeftSidebar'
+import RightSidebar from './RightSidebar'
+import CenterCont from './CenterCont'
 
 export default function MainCont() {
   return (
-    <div style={{display:"grid", gridTemplateColumns:"1fr", gap:10, padding:10}}> 
-        <Box bg={"white"} height={"fit-content"} borderRadius={10} borderWidth={1} padding={5}>
-               <Heading>Task Title</Heading> 
-               <Text fontSize={10} fontWeight={500}>Completed</Text>
-               <ProgressBar percentage={50}/>
-               <Text>30 days left</Text>    
-        </Box>  
+    <div className='bg' > 
+      <div style={{display:"flex",gap:10,borderRadius:10, padding:10}}>
+        <LeftSidebar/>
+        <CenterCont/>
+        <RightSidebar/>
+      </div>
     </div>
   )
 }
