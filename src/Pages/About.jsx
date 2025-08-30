@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Settings() {
+export default function About() {
   return (
     <div>
-      jhj
+      
     </div>
   )
 }

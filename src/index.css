@@ -8,9 +8,31 @@ body{
   padding: 0px;
   margin: 0px;
 }
+ul{
+  display:flex;
+}
 #root{
 width: 100%;
 flex: 1;
+}
+.log{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1a1a1d;
+  border-radius: 50;
+  transition: all ease-in-out 300ms;
+  padding:15; 
+  border-radius:50px;
+  width:70px;
+  height:50px;
+}
+.log:hover{
+  background-color: #1d43a3;
+  border-radius:50px;
+  width:70px;
+  height:50px;
+
 }
 .bg{
   width: 100%;
@@ -35,11 +57,8 @@ li{
   border-radius: 10px;
 }
 li:hover{
-  color: #000000;
-  background-color: #cdff03;
-  border-radius: 10px;
-
-
+  color: #1f6eab;
+  text-decoration: underline;
 }
 a {
   font-weight: 500;
@@ -70,4 +89,54 @@ button {
 button:hover {
   border-color: #646cff;
 }
-
+::-webkit-scrollbar{
+ background-color: #1d1d2000;
+ width: 7px;
+}
+::-webkit-scrollbar-thumb{
+  background-color: rgba(194, 194, 194, 0.715);
+  border-radius: 10px;
+}
+.footerText{
+  color: #1a1a1a;
+  font-weight: 400;
+}
+.footerText:hover{
+  text-decoration: underline;
+}
+.hamburger{
+    display: none;
+  }
+  .Log{
+    flex: .5;
+  }
+  .video{
+    flex: 1;
+    position: relative;
+  }
+  .hero{
+    max-width: 700px;
+  }
+@media only screen and (max-width: 890px) {
+  body {
+    background-color: lightblue;
+  }
+  div .sideillustration{
+    display: none;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .navc {
+    display: none;
+  } 
+  .Log{
+    flex: 1;
+    border-radius: 0px;
+  }
+  .video{
+    display: none;
+  }
+  .hamburger{
+    display: flex;
+  }
+}

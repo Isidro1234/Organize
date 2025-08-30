@@ -8,7 +8,7 @@ export default function Unauthorized() {
    useEffect(()=>{
           if(isAuthenticated){
               console.log(isAuthenticated)
-              navigate("/")
+              navigate("/Home")
           }
       }, [isAuthenticated])
   return !isAuthenticated && <Outlet/> 

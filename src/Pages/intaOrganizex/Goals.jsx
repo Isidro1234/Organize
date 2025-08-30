@@ -1,5 +1,5 @@
 import React from 'react'
-import GoalCard from '../components/elements/GoalCard'
+import GoalCard from '../../components/elements/GoalCard'
 
 export default function Goals() {
   return (

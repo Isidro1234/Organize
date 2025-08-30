@@ -12,7 +12,7 @@ export default function AuthProvider({children}) {
         }else{
             navigate("/Home")
         }
-    }, [])
+    }, [isAuthenticated])
     
   return (
     <AuthContext.Provider value={{user , isAuthenticated , setAuthenticated , setUser}}>

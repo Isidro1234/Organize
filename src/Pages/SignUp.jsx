@@ -18,16 +18,22 @@ export default function SignUp() {
             }
         }
   return (
-    <Box bg={"white"} borderRadius={20} padding={10} display={"flex"} gap={15} flexDirection={"column"}>
-        <Heading >Organize</Heading>
-        <Heading fontWeight={500} size={10} fontSize={10}>SignUp 👋</Heading>
-        <VStack>
-            <Input onChange={(e)=>setUsername(e.target.value)} _hover={{borderColor:"green.400"}} placeholder='username' />
-            <Input onChange={(e)=>setEmail(e.target.value)} _hover={{borderColor:"green.400"}} placeholder='Email' />
-            <Input onChange={(e)=>setPassword(e.target.value)} _hover={{borderColor:"green.400"}} placeholder='Password' />
-            <Button onClick={handleSign} bg={"black"} width={"100%"}>Login</Button>
+    <div style={{width:"100%",display:"flex",flexDirection:"row-reverse", height:"90vh", alignItems:"center"}}>
+        <Box  className='Log' height={"100%"} justifyContent={"center"}  bg={"white"} padding={10} display={"flex"} gap={15} flexDirection={"column"}>
+            
+         <Heading textAlign={"center"} lineHeight={.5} fontSize={20}>Sign up to Inta Tools</Heading>
+        <Heading  textAlign={"center"} fontWeight={300} size={10}  fontSize={14}>Welcome back👋 Sign Up below</Heading>
+        <VStack gap={4}>
+            <Input padding={7} paddingLeft={5} onChange={(e)=>setUsername(e.target.value)} _hover={{borderColor:"green.400"}} placeholder='username' />
+            <Input padding={7} paddingLeft={5} onChange={(e)=>setEmail(e.target.value)} _hover={{borderColor:"green.400"}} placeholder='Email' />
+            <Input padding={7} paddingLeft={5} onChange={(e)=>setPassword(e.target.value)} _hover={{borderColor:"green.400"}} placeholder='Password' />
+            <Button padding={7} onClick={handleSign} bg={"black"} width={"100%"}>Sign</Button>
         </VStack>
-        <Text  fontSize={10}>If you already have an account<Link color='blue' to={"/Login"}> clique here</Link></Text>
-      </Box>
+        <Text  fontSize={13}>If you already have an account<Link color='blue' to={"/Login"}> clique here</Link></Text>   </Box >
+          <div className='video' style={{position:"relative", height:"100%", flex:1}}>
+            <video loop={true} muted={true} autoPlay={true} style={{position:"absolute",zIndex:-1, top:0,height:"120%",transform:"translateX(-70px) translateY(-70px) rotateZ(4deg)", objectFit:"cover"}} width={"100%"} height={"100%"} src='https://www.pexels.com/download/video/18069863/'/>
+          </div>
+        </div>
+    
   )
 }

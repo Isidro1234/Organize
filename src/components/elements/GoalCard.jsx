@@ -8,7 +8,7 @@ export default function GoalCard({time, status , goalTitle , percentage }) {
         <Heading>{goalTitle}</Heading> 
         <Text fontSize={10} fontWeight={500} color={"#2896d1ff"}>{status}</Text>          
         <ProgressBar color={"blue"} percentage={percentage}/>
-        <Text fontSize={10} color={"gray.500"}>complete in {time} days ago</Text>    
+        <Text fontSize={10} color={"gray.500"}>complete in {time} days</Text>    
     </Box>  
   )
 }

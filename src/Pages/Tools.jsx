@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Settings() {
+export default function Tools() {
   return (
     <div>
-      jhj
+      
     </div>
   )
 }

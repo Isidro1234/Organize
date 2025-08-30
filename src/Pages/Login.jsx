@@ -17,17 +17,21 @@ export default function Login() {
         }
     }
   return (
-    <div style={{width:"100%",display:"flex", height:"80%", alignItems:"center", justifyContent:"center"}}>
-        <Box  maxW={500} maxH={350} borderWidth={1}  bg={"white"} borderRadius={20} padding={10} display={"flex"} gap={15} flexDirection={"column"}>
-        <Heading textAlign={"center"}>Organizex</Heading>
-        <Heading textAlign={"center"} fontWeight={500} size={10} fontSize={10}>Login 👋</Heading>
-        <VStack>
-            <Input onChange={(e)=>setEmail(e.target.value)} _hover={{borderColor:"green.400"}} placeholder='Email' />
-            <Input onChange={(e)=>setPassword(e.target.value)} _hover={{borderColor:"green.400"}} placeholder='Password'/>
-            <Button onClick={handleLogin} bg={"black"} width={"100%"}>Login</Button>
+    <div style={{width:"100%",display:"flex", height:"90vh", alignItems:"center"}}>
+        <Box className='Log'  height={"100%"} justifyContent={"center"}  bg={"white"}  padding={10} display={"flex"} gap={15} flexDirection={"column"}>
+        
+        <Heading textAlign={"center"} lineHeight={.5} fontSize={20}>Login to Inta Tools</Heading>
+        <Heading textAlign={"center"} fontWeight={300} size={14} fontSize={14}>Welcome back 👋 please log in below</Heading>
+        <VStack gap={5}>
+            <Input padding={7} paddingLeft={5} onChange={(e)=>setEmail(e.target.value)} _hover={{borderColor:"green.400"}} placeholder='Email' />
+            <Input padding={7} paddingLeft={5} onChange={(e)=>setPassword(e.target.value)} _hover={{borderColor:"green.400"}} placeholder='Password'/>
+            <Button padding={7} onClick={handleLogin} bg={"black"} width={"100%"}>Login</Button>
         </VStack>
-        <Text  fontSize={10}>If you don't already have an account<Link color='blue' to={"/SignUp"}> clique here</Link></Text>
-      </Box>
+        <Text  fontSize={13}>If you don't already have an account<Link color='blue' to={"/SignUp"}> clique here</Link></Text>
+      </Box >
+      <div className='video'  style={{ height:"100%"}}>
+        <video loop={true} muted={true} autoPlay={true} style={{position:"absolute",zIndex:-1, top:0,height:"120%",transform:"translateX(70px) translateY(-70px) rotateZ(4deg)", objectFit:"cover"}} width={"100%"} height={"100%"} src='https://www.pexels.com/download/video/18069236/'/>
+      </div>
     </div>
       
   )

@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Settings() {
+export default function Services() {
   return (
     <div>
-      jhj
+      
     </div>
   )
 }
