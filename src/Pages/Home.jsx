@@ -52,7 +52,7 @@ const Home = () => {
           </Text>
           <Button size={"lg"} onClick={()=>handlePress("started")}>Get Started Now</Button>
          </VStack>
-         <video  autoPlay={true} loop={true} controls={false} style={{position:"absolute",objectFit:"cover", width:"100%", height:"100%"}} src='https://www.pexels.com/download/video/18069232/'/>
+         <video muted={true} playsInline={true}  autoPlay={true} loop={true} controls={false} style={{position:"absolute",objectFit:"cover", width:"100%", height:"100%"}} src='https://www.pexels.com/download/video/18069232/'/>
       </Box>
       <Box position={"relative"} display={"flex"} alignItems={"center"} height={"70vh"} backgroundColor={"#f8fdffff"}>
         <VStack flex={1} gap={7} padding={10} alignItems={"flex-start"}>

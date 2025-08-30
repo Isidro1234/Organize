@@ -30,7 +30,7 @@ export default function Login() {
         <Text  fontSize={13}>If you don't already have an account<Link color='blue' to={"/SignUp"}> clique here</Link></Text>
       </Box >
       <div className='video'  style={{ height:"100%"}}>
-        <video loop={true} muted={true} autoPlay={true} style={{position:"absolute",zIndex:-1, top:0,height:"120%",transform:"translateX(70px) translateY(-70px) rotateZ(4deg)", objectFit:"cover"}} width={"100%"} height={"100%"} src='https://www.pexels.com/download/video/18069236/'/>
+        <video  playsInline={true}  loop={true} muted={true} autoPlay={true} style={{position:"absolute",zIndex:-1, top:0,height:"120%",transform:"translateX(70px) translateY(-70px) rotateZ(4deg)", objectFit:"cover"}} width={"100%"} height={"100%"} src='https://www.pexels.com/download/video/18069236/'/>
       </div>
     </div>
       

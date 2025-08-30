@@ -31,7 +31,7 @@ export default function SignUp() {
         </VStack>
         <Text  fontSize={13}>If you already have an account<Link color='blue' to={"/Login"}> clique here</Link></Text>   </Box >
           <div className='video' style={{position:"relative", height:"100%", flex:1}}>
-            <video loop={true} muted={true} autoPlay={true} style={{position:"absolute",zIndex:-1, top:0,height:"120%",transform:"translateX(-70px) translateY(-70px) rotateZ(4deg)", objectFit:"cover"}} width={"100%"} height={"100%"} src='https://www.pexels.com/download/video/18069863/'/>
+            <video playsInline={true}  loop={true} muted={true} autoPlay={true} style={{position:"absolute",zIndex:-1, top:0,height:"120%",transform:"translateX(-70px) translateY(-70px) rotateZ(4deg)", objectFit:"cover"}} width={"100%"} height={"100%"} src='https://www.pexels.com/download/video/18069863/'/>
           </div>
         </div>
     
